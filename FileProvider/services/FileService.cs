@@ -16,7 +16,6 @@ public class FileService(DataContext context, ILogger<FileService> logger, BlobS
     private readonly BlobServiceClient _client = client;
     private BlobContainerClient? _container;
 
-
     public async Task SetBlobContainerAsync(string containerName)
     {
         var container = _client.GetBlobContainerClient(containerName);

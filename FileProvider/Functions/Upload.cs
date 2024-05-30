@@ -1,4 +1,3 @@
-using Data.Contexts;
 using Data.Entities;
 using FileProvider.services;
 using Microsoft.AspNetCore.Http;
@@ -12,8 +11,6 @@ public class Upload(ILogger<Upload> logger, FileService fileService)
 {
     private readonly ILogger<Upload> _logger = logger;
     private readonly FileService _fileService = fileService;
-
-
 
 
     [Function("Upload")]
